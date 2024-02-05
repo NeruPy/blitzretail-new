@@ -1673,14 +1673,6 @@ t_onFuncLoad('t796_init', function () {
 t796_init('348437685');
 });
 });</script>
-<style>
-    /* Media query for smaller screens */
-    @media screen and (max-width: 767px) {
-        .t677__video-wrapper {
-            margin-left: 0; /* Reset margin for smaller screens */
-        }
-    }
-</style>
 
 
 
@@ -1697,8 +1689,8 @@ t796_init('348437685');
                         <div class="t677__col t-col t-col_6">
                             <!-- First Row Video -->
                             <div class="t677__row t677__row_2-videos">
-                                <div class="t677__video-wrapper" style="padding-bottom:20px; margin-left: -200px;">
-                                    <video width="760" controls>
+                                <div class="t677__video-wrapper" style="padding-bottom:20px;">
+                                    <video class="ttv" width="760" controls>
                                         <source src="блиц ролик.mp4" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
@@ -1706,8 +1698,8 @@ t796_init('348437685');
                             </div>
                             <!-- Second Row Video -->
                             <div class="t677__row t677__row_2-videos">
-                                <div class="t677__video-wrapper" style="margin-left: -200px;">
-                                    <video width="100%" controls>
+                                <div class="t677__video-wrapper">
+                                    <video class="ttv" width="760" controls>
                                         <source src="blitzrolik2.mp4" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
@@ -1722,7 +1714,23 @@ t796_init('348437685');
                                             itemprop="image"
                                             content="https:/static.tildacdn.com/tild3039-3864-4536-a531-353665653163/th11.jpg">
                                         </div>
-</div>
+</div><style>
+    .t677__video-wrapper{
+            
+        margin-left: -200px;
+    
+    
+    }
+    @media screen and (max-width: 767px) {
+        .ttv{
+            width: 360px;
+
+        }
+        .t677__video-wrapper {
+            margin-left: 0px; /* Reset margin for smaller screens */
+        }
+    }
+</style>
                         </div><div
                             class="t677__col t-col t-col_5 t-prefix_1 t677__top-indent"><div
                                 class="t677__textwrapper t-align_left"><div
